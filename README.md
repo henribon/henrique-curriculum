@@ -1,180 +1,211 @@
-# Currículo Industrial - Henrique Bon Oliveira
+# Currículo Moderno - Henrique Bon Oliveira
 
-Um currículo web moderno e estático com design industrial, criado para desenvolvedores de software.
+Um currículo web moderno e minimalista com design limpo e tons de roxo, criado para desenvolvedores de software.
 
 ## 🎨 Design
 
-O design foi inspirado em elementos industriais:
-- **Paleta de cores**: Tons de metal escuro, laranja ferrugem e amarelo de alerta
-- **Texturas**: Metal escovado, concreto e grades industriais
-- **Tipografia**: Roboto Mono e Oswald para uma aparência robusta e moderna
-- **Elementos**: Rebites, faixas de alerta e bordas metálicas
+Design moderno e minimalista inspirado nas melhores práticas de UI/UX:
+- **Paleta de cores**: Tons de roxo vibrantes (#8B5CF6, #A78BFA, #C4B5FD) com neutros suaves
+- **Tipografia**: Inter - uma das fontes mais modernas e legíveis
+- **Layout**: Clean com muito espaço em branco (whitespace)
+- **Cards**: Bordas arredondadas e sombras suaves
+- **Elementos**: Avatar circular, badges modernos, gradientes sutis
 
 ## 🚀 Recursos
 
-- ✅ Design responsivo para todos os dispositivos
-- ✅ **Apenas HTML e CSS puro** - sem JavaScript!
-- ✅ Seções expansíveis usando técnica CSS (checkbox + label)
-- ✅ Animações suaves e transições
-- ✅ Tema escuro industrial
-- ✅ Fácil de customizar
+- ✅ Design moderno e minimalista
+- ✅ **Apenas HTML e CSS puro** - zero JavaScript!
+- ✅ Seções expansíveis usando técnica CSS pura (checkbox + label)
+- ✅ Paleta de cores roxa profissional
+- ✅ Totalmente responsivo (mobile-first)
+- ✅ Animações suaves e microinterações
+- ✅ Otimizado para impressão (print-friendly)
+- ✅ Fácil de customizar com CSS Variables
 - ✅ Pronto para deploy imediato
 
 ## 📦 Tecnologias
 
-- HTML5
-- CSS3 (Custom Properties, Grid, Flexbox, Transitions)
-- Font Awesome Icons (CDN)
-- Google Fonts (CDN)
+- HTML5 Semântico
+- CSS3 Moderno (Custom Properties, Grid, Flexbox, Animations)
+- Font Awesome Icons 6.4.0 (CDN)
+- Google Fonts - Inter (CDN)
 
-**Sem dependências** - Sem build tools, sem Node.js, sem frameworks!
+**Zero dependências** - Sem build tools, sem Node.js, sem frameworks, sem JavaScript!
 
 ## 🔧 Como usar
 
 ### Opção 1: Abrir diretamente no navegador
 
-Simplesmente clique duas vezes no arquivo `index.html` para abrir no seu navegador padrão.
+Simplesmente clique duas vezes no arquivo `index.html`.
 
-### Opção 2: Usar um servidor local (opcional)
+### Opção 2: Servidor local (opcional)
 
 ```bash
 # Python 3
 python -m http.server 8000
 
-# Node.js (se tiver npx)
+# Node.js
 npx serve
 
 # PHP
 php -S localhost:8000
 ```
 
-Depois acesse: `http://localhost:8000`
+Acesse: `http://localhost:8000`
 
-## 🌐 Deploy
+## 🌐 Deploy Gratuito
 
-Você pode fazer deploy deste currículo em várias plataformas gratuitas:
+### GitHub Pages (RECOMENDADO) 🌟
 
-### GitHub Pages (RECOMENDADO)
-
-1. Vá em **Settings** > **Pages** no seu repositório
+1. Vá em **Settings** > **Pages**
 2. Selecione a branch como source
-3. Sua página estará disponível em: `https://[seu-usuario].github.io/[nome-repo]/`
+3. Pronto! URL: `https://[usuario].github.io/[repo]/`
 
 ### Netlify
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start)
-
-1. Arraste e solte a pasta no Netlify Drop
-2. Ou conecte seu repositório GitHub ao Netlify
-3. Deploy automático!
+1. Arraste e solte a pasta no [Netlify Drop](https://app.netlify.com/drop)
+2. Ou conecte via GitHub para deploy automático
 
 ### Vercel
 
-1. Importe o repositório no Vercel
-2. Deploy automático - nenhuma configuração necessária
+1. Importe o repositório
+2. Deploy automático - zero configuração
 
-### Hostinger / Hospedagem Tradicional
+### Outras opções
 
-Simplesmente faça upload dos arquivos via FTP para a pasta `public_html`.
+- **Surge.sh**: `surge .`
+- **GitHub Codespaces**: Preview direto
+- **Qualquer hospedagem**: Upload via FTP
 
 ## 📝 Personalização
 
-### Informações Pessoais
+### Alterar Cores
 
-Edite o arquivo `index.html` e procure por:
-- Nome, título, localização no header
-- Contatos (telefone, email, LinkedIn, GitHub)
-- Experiências profissionais
-- Repositórios e projetos
-
-### Cores e Estilo
-
-Modifique as variáveis CSS no `:root` do arquivo `styles.css`:
+Edite as variáveis CSS no início do arquivo `styles.css`:
 
 ```css
 :root {
-    --metal-dark: #1a1a1a;
-    --metal-medium: #2d2d2d;
-    --rust-orange: #ff6b35;
-    --warning-yellow: #ffa500;
-    /* ... outras variáveis */
+    /* Mude os tons de roxo */
+    --purple-600: #8B5CF6; /* Cor principal */
+    --purple-700: #7C3AED; /* Gradiente */
+    --purple-50: #F5F3FF;  /* Background claro */
+
+    /* Ou troque por outra cor */
+    --primary-color: #3B82F6; /* Azul */
+    --primary-color: #10B981; /* Verde */
+    --primary-color: #EF4444; /* Vermelho */
 }
 ```
 
-### Adicionar/Remover Seções
+### Alterar Conteúdo
 
-Para adicionar uma nova experiência, copie o bloco `.expandable-card` e cole:
+Edite `index.html`:
+- **Header**: Nome, título, localização (linhas 17-23)
+- **Contatos**: Email, telefone, links (linhas 31-47)
+- **Experiências**: Empresas, datas, conquistas (linhas 63+)
+- **Projetos**: Repositórios e links (linhas 181+)
+
+### Adicionar Experiência
+
+Copie um bloco `.card` existente:
 
 ```html
-<div class="expandable-card">
-    <input type="checkbox" id="seu-id-unico" class="card-toggle">
-    <label for="seu-id-unico" class="card-header">
-        <!-- Seu conteúdo do header -->
+<div class="card">
+    <input type="checkbox" id="exp-nova" class="card-toggle">
+    <label for="exp-nova" class="card-header">
+        <!-- Conteúdo do header -->
         <i class="fas fa-chevron-down expand-icon"></i>
     </label>
     <div class="card-content">
-        <!-- Seu conteúdo expansível -->
+        <!-- Seu conteúdo aqui -->
     </div>
 </div>
 ```
 
 ## 📱 Responsividade
 
-O currículo é totalmente responsivo com breakpoints em:
-- **Desktop**: > 768px - Layout completo em grid
-- **Tablet**: 480px - 768px - Layout adaptado
-- **Mobile**: < 480px - Layout em coluna única
+Totalmente responsivo com breakpoints otimizados:
 
-## ⚙️ Seções Expansíveis (Accordion)
+- **Desktop** (> 768px): Layout completo com avatar grande
+- **Tablet** (480-768px): Layout adaptado
+- **Mobile** (< 480px): Layout vertical otimizado
 
-As seções são expansíveis usando **apenas CSS**! Nenhum JavaScript necessário.
+## ⚙️ Funcionalidades CSS Puras
+
+### Accordion sem JavaScript
+
+As seções expansíveis usam apenas CSS:
+
+```html
+<input type="checkbox" id="id-unico" class="card-toggle" checked>
+<label for="id-unico">Clique aqui</label>
+<div class="card-content">Conteúdo colapsável</div>
+```
 
 **Como funciona:**
-- Usa um checkbox escondido
-- O label funciona como botão clicável
-- CSS controla a altura do conteúdo baseado no estado do checkbox
-- Ícone rotaciona quando expandido
+- Checkbox invisível controla o estado
+- `:checked` pseudo-class aplica estilos quando marcado
+- Transições CSS para animação suave
 
 **Vantagens:**
-- Performance superior (sem JS)
-- Funciona mesmo com JavaScript desabilitado
-- Mais leve e rápido
-- Fácil de manter
+- Funciona sem JavaScript
+- Performance superior
+- Mais leve
+- SEO-friendly
 
-## 🎯 Estrutura de Arquivos
+## 🎯 Estrutura
 
 ```
 henrique-curriculum/
-├── index.html          # Página principal
-├── styles.css          # Todos os estilos
-└── README.md           # Este arquivo
+├── index.html    # Página principal (8KB)
+├── styles.css    # Estilos modernos (12KB)
+└── README.md     # Este arquivo
 ```
 
-Simples assim! Apenas 2 arquivos principais.
+**Total: 20KB de código limpo!**
 
-## 🎨 Seções Incluídas
+## 🎨 Paleta de Cores
 
-1. **Header** - Nome, título profissional com design industrial
-2. **Contatos** - Telefone, email, LinkedIn, GitHub
-3. **Experiência Profissional** - 3 posições expansíveis com detalhes
-4. **Repositórios & Projetos** - Seção para seus projetos
-5. **Contribuições Open Source** - Destaque para Spring Framework
-6. **Footer** - Direitos autorais e design industrial
+```
+Roxos:
+- #8B5CF6 (purple-600) - Principal
+- #7C3AED (purple-700) - Secundário
+- #A78BFA (purple-500) - Médio
+- #C4B5FD (purple-400) - Claro
+- #F5F3FF (purple-50)  - Background
+
+Neutros:
+- #111827 (gray-900) - Texto principal
+- #4B5563 (gray-600) - Texto secundário
+- #E5E7EB (gray-200) - Bordas
+- #F9FAFB (gray-50)  - Background
+```
 
 ## 💡 Dicas
 
-- Para definir qual seção inicia aberta, adicione `checked` ao checkbox:
-  ```html
-  <input type="checkbox" id="exp-americanas" class="card-toggle" checked>
-  ```
+1. **Iniciar seção aberta**: Adicione `checked` ao checkbox
+   ```html
+   <input type="checkbox" id="exp" class="card-toggle" checked>
+   ```
 
-- Para mudar as cores das tags de tecnologia, edite `.tech-tag` em `styles.css`
+2. **Imprimir currículo**: Use Ctrl+P - o CSS tem estilos otimizados para impressão
 
-- Os ícones são do Font Awesome 6.4.0. Veja todos em: [fontawesome.com/icons](https://fontawesome.com/icons)
+3. **Mudar fonte**: Troque na importação do Google Fonts e na variável `font-family`
+
+4. **Avatar customizado**: Troque "HB" pelas suas iniciais (linha 18)
+
+## 🌟 Destaques
+
+- ✨ Design inspirado em plataformas modernas (Linear, Stripe, Vercel)
+- 🎯 Foco em legibilidade e hierarquia visual
+- 🚀 Carregamento instantâneo (< 100KB total)
+- ♿ Acessível e semântico
+- 📱 Mobile-first approach
+- 🖨️ Print-friendly
 
 ## 📄 Licença
 
-MIT License - sinta-se livre para usar e modificar!
+MIT License - Use livremente!
 
 ## 👤 Autor
 
@@ -185,6 +216,6 @@ MIT License - sinta-se livre para usar e modificar!
 
 ---
 
-Feito com ⚙️ e ☕ por Henrique Bon
+Feito com 💜 e CSS por Henrique Bon
 
-**100% HTML & CSS • 0% JavaScript • 0 Dependências**
+**100% HTML & CSS • 0% JavaScript • 0 Dependências • 100% Moderno**

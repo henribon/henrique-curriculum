@@ -7,373 +7,225 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@300;400;500;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Hero Section -->
-    <section class="hero">
+    <!-- Header -->
+    <header class="header">
         <div class="container">
-            <div class="hero-content">
-                <div class="badge">Disponível para novos projetos</div>
-                <h1 class="hero-title">Henrique Bon Oliveira</h1>
-                <p class="hero-subtitle">Software Developer especializado em Java & Spring Boot</p>
-                <p class="hero-location">
-                    <i class="fas fa-map-marker-alt"></i>
-                    Rio de Janeiro, Brasil
-                </p>
+            <h1 class="name">Henrique Bon Oliveira</h1>
+            <p class="role">Software Developer</p>
+            <p class="location">Rio de Janeiro, Brasil</p>
 
-                <div class="hero-links">
-                    <a href="mailto:henribonrec@gmail.com" class="hero-link">
-                        <i class="fas fa-envelope"></i>
-                        Email
-                    </a>
-                    <a href="https://www.linkedin.com/in/henrique-bon-249073157/" target="_blank" class="hero-link">
-                        <i class="fab fa-linkedin"></i>
-                        LinkedIn
-                    </a>
-                    <a href="https://github.com/henribon" target="_blank" class="hero-link">
-                        <i class="fab fa-github"></i>
-                        GitHub
-                    </a>
-                    <a href="tel:+5521982275731" class="hero-link">
-                        <i class="fas fa-phone"></i>
-                        +55 21 98227-5731
-                    </a>
-                </div>
+            <div class="contact">
+                <a href="mailto:henribonrec@gmail.com">henribonrec@gmail.com</a>
+                <span class="separator">·</span>
+                <a href="tel:+5521982275731">+55 21 98227-5731</a>
+                <span class="separator">·</span>
+                <a href="https://www.linkedin.com/in/henrique-bon-249073157/" target="_blank">LinkedIn</a>
+                <span class="separator">·</span>
+                <a href="https://github.com/henribon" target="_blank">GitHub</a>
             </div>
         </div>
-    </section>
+    </header>
 
-    <!-- Main Content -->
+    <!-- Main -->
     <main class="container">
 
-        <!-- Skills & Technologies -->
+        <!-- About -->
         <section class="section">
-            <h2 class="section-title">Skills & Technologies</h2>
-            <p class="section-subtitle">Tecnologias e ferramentas que utilizo no dia a dia</p>
+            <p class="intro">
+                Desenvolvedor de software especializado em <strong>Java</strong> e <strong>Spring Boot</strong>,
+                com experiência em <strong>microserviços</strong>, <strong>cloud computing</strong> e
+                <strong>sistemas financeiros de alta disponibilidade</strong>. Apaixonado por código limpo,
+                arquitetura escalável e contribuições open source.
+            </p>
+        </section>
 
-            <div class="skills-category">
-                <h3 class="category-title">Backend & Frameworks</h3>
-                <div class="skills-grid">
-                    <div class="skill-card">
-                        <div class="skill-icon java">
-                            <i class="fab fa-java"></i>
-                        </div>
-                        <h4>Java</h4>
-                        <p>Java 21/22</p>
-                    </div>
-                    <div class="skill-card">
-                        <div class="skill-icon spring">
-                            <i class="fas fa-leaf"></i>
-                        </div>
-                        <h4>Spring Boot</h4>
-                        <p>3.x</p>
-                    </div>
-                    <div class="skill-card">
-                        <div class="skill-icon">
-                            <i class="fas fa-cogs"></i>
-                        </div>
-                        <h4>Spring Data</h4>
-                        <p>JPA & MongoDB</p>
-                    </div>
-                    <div class="skill-card">
-                        <div class="skill-icon">
-                            <i class="fas fa-shield-alt"></i>
-                        </div>
-                        <h4>Spring Security</h4>
-                        <p>Autenticação</p>
-                    </div>
-                    <div class="skill-card">
-                        <div class="skill-icon">
-                            <i class="fas fa-stream"></i>
-                        </div>
-                        <h4>Kafka</h4>
-                        <p>Mensageria</p>
+        <!-- Open Source Contribution -->
+        <section class="section">
+            <h2 class="section-title">Contribuição Open Source</h2>
+
+            <div class="contribution-highlight">
+                <div class="contribution-badge">
+                    <svg width="20" height="20" viewBox="0 0 16 16" fill="currentColor">
+                        <path d="M7.177 3.073L9.573.677A.25.25 0 0110 .854v4.792a.25.25 0 01-.427.177L7.177 3.427a.25.25 0 010-.354zM3.75 2.5a.75.75 0 100 1.5.75.75 0 000-1.5zm-2.25.75a2.25 2.25 0 113 2.122v5.256a2.251 2.251 0 11-1.5 0V5.372A2.25 2.25 0 011.5 3.25zM11 2.5h-1V4h1a1 1 0 011 1v5.628a2.251 2.251 0 101.5 0V5A2.5 2.5 0 0011 2.5zm1 10.25a.75.75 0 111.5 0 .75.75 0 01-1.5 0zM3.75 12a.75.75 0 100 1.5.75.75 0 000-1.5z"/>
+                    </svg>
+                    Pull Request Aprovado
+                </div>
+
+                <h3 class="contribution-title">Spring Petclinic</h3>
+                <p class="contribution-description">
+                    Contribuição aprovada para o projeto oficial Spring Petclinic,
+                    aplicação de referência para demonstração do Spring Framework.
+                </p>
+
+                <div class="contribution-meta">
+                    <span class="meta-item">
+                        <strong>PR #2113</strong>
+                    </span>
+                    <span class="meta-item">
+                        <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor">
+                            <path fill-rule="evenodd" d="M1.5 8a6.5 6.5 0 1113 0 6.5 6.5 0 01-13 0zM8 0a8 8 0 100 16A8 8 0 008 0zm.5 4.75a.75.75 0 00-1.5 0v3.5a.75.75 0 00.471.696l2.5 1a.75.75 0 00.557-1.392L8.5 7.742V4.75z"/>
+                        </svg>
+                        Aprovado e Merged
+                    </span>
+                    <span class="meta-item">
+                        <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor">
+                            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
+                        </svg>
+                        spring-projects
+                    </span>
+                </div>
+
+                <a href="https://github.com/spring-projects/spring-petclinic/pull/2113" target="_blank" class="contribution-link">
+                    Ver Pull Request no GitHub →
+                </a>
+            </div>
+        </section>
+
+        <!-- Skills -->
+        <section class="section">
+            <h2 class="section-title">Tecnologias & Ferramentas</h2>
+
+            <div class="skills-group">
+                <div class="skill-category">
+                    <h3 class="category-label">Backend</h3>
+                    <div class="tags">
+                        <span class="tag">Java 21/22</span>
+                        <span class="tag">Spring Boot 3.x</span>
+                        <span class="tag">Spring Data JPA</span>
+                        <span class="tag">Spring Security</span>
+                        <span class="tag">Spring Kafka</span>
+                        <span class="tag">Kafka</span>
+                        <span class="tag">REST APIs</span>
                     </div>
                 </div>
-            </div>
 
-            <div class="skills-category">
-                <h3 class="category-title">Databases</h3>
-                <div class="skills-grid">
-                    <div class="skill-card">
-                        <div class="skill-icon mongodb">
-                            <i class="fas fa-leaf"></i>
-                        </div>
-                        <h4>MongoDB</h4>
-                        <p>NoSQL</p>
-                    </div>
-                    <div class="skill-card">
-                        <div class="skill-icon oracle">
-                            <i class="fas fa-database"></i>
-                        </div>
-                        <h4>Oracle</h4>
-                        <p>SQL</p>
-                    </div>
-                    <div class="skill-card">
-                        <div class="skill-icon">
-                            <i class="fas fa-database"></i>
-                        </div>
-                        <h4>SQL Server</h4>
-                        <p>Microsoft</p>
-                    </div>
-                    <div class="skill-card">
-                        <div class="skill-icon redis">
-                            <i class="fas fa-bolt"></i>
-                        </div>
-                        <h4>Redis</h4>
-                        <p>Cache</p>
+                <div class="skill-category">
+                    <h3 class="category-label">Databases</h3>
+                    <div class="tags">
+                        <span class="tag">MongoDB</span>
+                        <span class="tag">Oracle</span>
+                        <span class="tag">SQL Server</span>
+                        <span class="tag">Redis</span>
                     </div>
                 </div>
-            </div>
 
-            <div class="skills-category">
-                <h3 class="category-title">Cloud & DevOps</h3>
-                <div class="skills-grid">
-                    <div class="skill-card">
-                        <div class="skill-icon azure">
-                            <i class="fab fa-microsoft"></i>
-                        </div>
-                        <h4>Azure</h4>
-                        <p>Cloud Platform</p>
-                    </div>
-                    <div class="skill-card">
-                        <div class="skill-icon kubernetes">
-                            <i class="fas fa-dharmachakra"></i>
-                        </div>
-                        <h4>Kubernetes</h4>
-                        <p>Container Orchestration</p>
-                    </div>
-                    <div class="skill-card">
-                        <div class="skill-icon docker">
-                            <i class="fab fa-docker"></i>
-                        </div>
-                        <h4>Docker</h4>
-                        <p>Containers</p>
-                    </div>
-                    <div class="skill-card">
-                        <div class="skill-icon">
-                            <i class="fas fa-chart-line"></i>
-                        </div>
-                        <h4>Datadog</h4>
-                        <p>Observability</p>
-                    </div>
-                    <div class="skill-card">
-                        <div class="skill-icon gitlab">
-                            <i class="fab fa-gitlab"></i>
-                        </div>
-                        <h4>GitLab CI</h4>
-                        <p>CI/CD</p>
+                <div class="skill-category">
+                    <h3 class="category-label">Cloud & DevOps</h3>
+                    <div class="tags">
+                        <span class="tag">Azure</span>
+                        <span class="tag">Kubernetes (AKS)</span>
+                        <span class="tag">Docker</span>
+                        <span class="tag">GitLab CI/CD</span>
+                        <span class="tag">Datadog</span>
+                        <span class="tag">Azure Key Vault</span>
                     </div>
                 </div>
-            </div>
 
-            <div class="skills-category">
-                <h3 class="category-title">Frontend & Tools</h3>
-                <div class="skills-grid">
-                    <div class="skill-card">
-                        <div class="skill-icon react">
-                            <i class="fab fa-react"></i>
-                        </div>
-                        <h4>React</h4>
-                        <p>Frontend</p>
-                    </div>
-                    <div class="skill-card">
-                        <div class="skill-icon javascript">
-                            <i class="fab fa-js"></i>
-                        </div>
-                        <h4>JavaScript</h4>
-                        <p>ES6+</p>
-                    </div>
-                    <div class="skill-card">
-                        <div class="skill-icon git">
-                            <i class="fab fa-git-alt"></i>
-                        </div>
-                        <h4>Git</h4>
-                        <p>Version Control</p>
-                    </div>
-                    <div class="skill-card">
-                        <div class="skill-icon">
-                            <i class="fas fa-code"></i>
-                        </div>
-                        <h4>IntelliJ IDEA</h4>
-                        <p>IDE</p>
+                <div class="skill-category">
+                    <h3 class="category-label">Práticas</h3>
+                    <div class="tags">
+                        <span class="tag">Clean Code</span>
+                        <span class="tag">SOLID</span>
+                        <span class="tag">TDD</span>
+                        <span class="tag">Pair Programming</span>
+                        <span class="tag">Code Review</span>
+                        <span class="tag">Microservices</span>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Experience Section -->
+        <!-- Experience -->
         <section class="section">
             <h2 class="section-title">Experiência</h2>
-            <p class="section-subtitle">Minha trajetória profissional</p>
 
-            <div class="timeline">
-                <!-- Americanas -->
-                <div class="timeline-item">
-                    <input type="checkbox" id="exp-americanas" class="timeline-toggle" checked>
-                    <label for="exp-americanas" class="timeline-header">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-header-content">
-                            <div class="timeline-left">
-                                <h3 class="timeline-title">Desenvolvedor de Software</h3>
-                                <p class="timeline-company">Americanas S.A.</p>
-                            </div>
-                            <div class="timeline-right">
-                                <span class="timeline-period">Jul 2025 - Presente</span>
-                                <span class="timeline-location">São Paulo</span>
-                            </div>
-                        </div>
-                        <i class="fas fa-chevron-down timeline-icon"></i>
-                    </label>
-                    <div class="timeline-content">
-                        <ul class="timeline-list">
-                            <li>Desenvolvimento de microserviços backend para plataforma de e-commerce com <strong>milhões de transações diárias</strong></li>
-                            <li><strong>Migração crítica do sistema de Pricing</strong> de Oracle para MongoDB - refatoração completa, remoção de interfaces legacy e zero downtime</li>
-                            <li><strong>Bug fix crítico Samsung-IMEI</strong> com implementação de rastreamento end-to-end e observabilidade completa</li>
-                            <li><strong>Migração AWS → Azure</strong> do sistema Financeiro - 3 aplicações com migração total de secrets</li>
-                            <li>Práticas de <strong>Clean Code, SOLID, TDD</strong> e pair programming</li>
-                        </ul>
-                        <div class="tech-pills">
-                            <span class="pill">Java 21/22</span>
-                            <span class="pill">Spring Boot 3.x</span>
-                            <span class="pill">MongoDB</span>
-                            <span class="pill">Kubernetes</span>
-                            <span class="pill">Azure</span>
-                            <span class="pill">Datadog</span>
-                        </div>
+            <div class="experience">
+                <div class="exp-header">
+                    <div>
+                        <h3 class="exp-title">Desenvolvedor de Software</h3>
+                        <p class="exp-company">Americanas S.A.</p>
+                    </div>
+                    <div class="exp-period">
+                        <span>Jul 2025 - Presente</span>
+                        <span class="exp-location">São Paulo, Brasil</span>
                     </div>
                 </div>
+                <ul class="exp-list">
+                    <li>Desenvolvimento de microserviços backend para e-commerce com milhões de transações diárias</li>
+                    <li>Migração crítica do sistema de Pricing de Oracle para MongoDB com zero downtime</li>
+                    <li>Resolução de bug crítico no sistema Samsung-IMEI com observabilidade end-to-end</li>
+                    <li>Migração de infraestrutura AWS → Azure de 3 aplicações do sistema Financeiro</li>
+                    <li>Aplicação de práticas Clean Code, SOLID e TDD em ambiente ágil</li>
+                </ul>
+            </div>
 
-                <!-- Dimensa -->
-                <div class="timeline-item">
-                    <input type="checkbox" id="exp-dimensa" class="timeline-toggle">
-                    <label for="exp-dimensa" class="timeline-header">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-header-content">
-                            <div class="timeline-left">
-                                <h3 class="timeline-title">Desenvolvedor de Software</h3>
-                                <p class="timeline-company">Dimensa</p>
-                            </div>
-                            <div class="timeline-right">
-                                <span class="timeline-period">Jul 2024 - Jun 2025</span>
-                                <span class="timeline-location">São Paulo</span>
-                            </div>
-                        </div>
-                        <i class="fas fa-chevron-down timeline-icon"></i>
-                    </label>
-                    <div class="timeline-content">
-                        <ul class="timeline-list">
-                            <li><strong>Core Banking & BACEN</strong> - Desenvolvimento de soluções financeiras para integração com Banco Central</li>
-                            <li><strong>Implementação de sistemas Pix:</strong> Automático, MED, QRCode, Saque/Troco</li>
-                            <li><strong>DDA e SPB</strong> - Débito Direto Autorizado e Sistema de Pagamentos Brasileiro</li>
-                            <li><strong>Framework interno</strong> - Desenvolvimento e implementação para padronização</li>
-                            <li>Mentoria de desenvolvedores júnior e code review ativo</li>
-                        </ul>
-                        <div class="tech-pills">
-                            <span class="pill">Java</span>
-                            <span class="pill">Spring Boot</span>
-                            <span class="pill">Oracle</span>
-                            <span class="pill">Kafka</span>
-                            <span class="pill">Docker</span>
-                            <span class="pill">React</span>
-                        </div>
+            <div class="experience">
+                <div class="exp-header">
+                    <div>
+                        <h3 class="exp-title">Desenvolvedor de Software</h3>
+                        <p class="exp-company">Dimensa</p>
+                    </div>
+                    <div class="exp-period">
+                        <span>Jul 2024 - Jun 2025</span>
+                        <span class="exp-location">São Paulo, Brasil</span>
                     </div>
                 </div>
+                <ul class="exp-list">
+                    <li>Desenvolvimento de soluções Core Banking para integração com BACEN</li>
+                    <li>Implementação de sistemas Pix: Automático, MED, QRCode, Saque/Troco</li>
+                    <li>Desenvolvimento de DDA (Débito Direto Autorizado) e SPB</li>
+                    <li>Criação de framework interno para padronização de desenvolvimento</li>
+                    <li>Mentoria de desenvolvedores júnior e code review ativo</li>
+                </ul>
+            </div>
 
-                <!-- Dimensa Estagiário -->
-                <div class="timeline-item">
-                    <input type="checkbox" id="exp-intern" class="timeline-toggle">
-                    <label for="exp-intern" class="timeline-header">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-header-content">
-                            <div class="timeline-left">
-                                <h3 class="timeline-title">Estagiário de Desenvolvimento</h3>
-                                <p class="timeline-company">Dimensa - Totvs/B3</p>
-                            </div>
-                            <div class="timeline-right">
-                                <span class="timeline-period">Out 2022 - Mar 2024</span>
-                                <span class="timeline-location">São Paulo</span>
-                            </div>
-                        </div>
-                        <i class="fas fa-chevron-down timeline-icon"></i>
-                    </label>
-                    <div class="timeline-content">
-                        <ul class="timeline-list">
-                            <li>Início da carreira em desenvolvimento no setor financeiro</li>
-                            <li>Participação em projetos de Core Banking e sistemas de pagamento</li>
-                            <li>Aprendizado de arquitetura de microserviços e metodologias ágeis</li>
-                        </ul>
-                        <div class="tech-pills">
-                            <span class="pill">Java</span>
-                            <span class="pill">Spring Boot</span>
-                            <span class="pill">SQL</span>
-                            <span class="pill">Git</span>
-                        </div>
+            <div class="experience">
+                <div class="exp-header">
+                    <div>
+                        <h3 class="exp-title">Estagiário de Desenvolvimento</h3>
+                        <p class="exp-company">Dimensa - Totvs/B3</p>
+                    </div>
+                    <div class="exp-period">
+                        <span>Out 2022 - Mar 2024</span>
+                        <span class="exp-location">São Paulo, Brasil</span>
                     </div>
                 </div>
+                <ul class="exp-list">
+                    <li>Início da carreira em desenvolvimento de software no setor financeiro</li>
+                    <li>Participação em projetos de Core Banking e sistemas de pagamento</li>
+                    <li>Aprendizado de arquitetura de microserviços e metodologias ágeis</li>
+                </ul>
             </div>
         </section>
 
         <!-- Projects -->
         <section class="section">
             <h2 class="section-title">Projetos</h2>
-            <p class="section-subtitle">Alguns dos meus trabalhos</p>
 
-            <div class="projects-container">
-                <a href="https://github.com/henribon/henrique-curriculum" target="_blank" class="project-card-link">
-                    <div class="project-card-modern">
-                        <div class="project-header-modern">
-                            <i class="fab fa-github project-icon-modern"></i>
-                            <span class="project-badge">HTML/CSS</span>
-                        </div>
-                        <h3 class="project-title-modern">henrique-curriculum</h3>
-                        <p class="project-description-modern">Currículo web moderno e minimalista com design clean. Desenvolvido com HTML e CSS puro.</p>
-                        <div class="project-footer-modern">
-                            <span class="project-link-text">Ver repositório →</span>
-                        </div>
-                    </div>
-                </a>
-
-                <a href="https://github.com/henribon" target="_blank" class="project-card-link">
-                    <div class="project-card-modern featured">
-                        <div class="project-header-modern">
-                            <i class="fab fa-github project-icon-modern"></i>
-                            <span class="project-badge">GitHub</span>
-                        </div>
-                        <h3 class="project-title-modern">Mais projetos</h3>
-                        <p class="project-description-modern">Confira todos os meus repositórios públicos, contribuições e atividades no GitHub.</p>
-                        <div class="project-footer-modern">
-                            <span class="project-link-text">Ver perfil →</span>
-                        </div>
-                    </div>
-                </a>
-            </div>
-        </section>
-
-        <!-- Open Source -->
-        <section class="section">
-            <h2 class="section-title">Open Source</h2>
-            <p class="section-subtitle">Contribuições e interesse em projetos open source</p>
-
-            <div class="opensource-card">
-                <div class="opensource-header">
-                    <i class="fas fa-leaf spring-icon-large"></i>
-                    <div>
-                        <h3>Spring Framework</h3>
-                        <p>Interesse ativo em contribuir para o ecossistema Spring</p>
-                    </div>
+            <div class="projects">
+                <div class="project">
+                    <h3 class="project-title">henrique-curriculum</h3>
+                    <p class="project-description">
+                        Currículo web minimalista com design clean em tons clay.
+                        Desenvolvido com HTML e CSS puro, totalmente responsivo.
+                    </p>
+                    <a href="https://github.com/henribon/henrique-curriculum" target="_blank" class="project-link">
+                        Ver no GitHub →
+                    </a>
                 </div>
-                <p class="opensource-text">
-                    Como desenvolvedor que trabalha diariamente com Spring Boot, Spring Data, Spring Security e Spring Kafka,
-                    tenho grande interesse em retribuir à comunidade. Atualmente estudando a base de código e procurando
-                    oportunidades de contribuição.
-                </p>
-                <a href="https://github.com/spring-projects" target="_blank" class="btn-opensource">
-                    <i class="fab fa-github"></i>
-                    Ver projetos Spring
-                </a>
+
+                <div class="project">
+                    <h3 class="project-title">Mais projetos no GitHub</h3>
+                    <p class="project-description">
+                        Confira outros repositórios públicos e contribuições no meu perfil.
+                    </p>
+                    <a href="https://github.com/henribon" target="_blank" class="project-link">
+                        @henribon →
+                    </a>
+                </div>
             </div>
         </section>
 
@@ -383,7 +235,6 @@
     <footer class="footer">
         <div class="container">
             <p>© 2025 Henrique Bon Oliveira</p>
-            <p class="footer-subtitle">Desenvolvido com HTML & CSS puro</p>
         </div>
     </footer>
 </body>

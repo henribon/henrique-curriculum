@@ -72,24 +72,45 @@
             </div>
 
             <!-- Americanas -->
-            <div class="job-card">
-                <div class="job-header">
-                    <div class="job-title-area">
-                        <h3 class="job-title">Desenvolvedor de Software</h3>
-                        <div class="company-name">Americanas S.A.</div>
+            <div class="expandable-card">
+                <input type="checkbox" id="exp-americanas" class="card-toggle" checked>
+                <label for="exp-americanas" class="card-header">
+                    <div class="job-header-content">
+                        <div class="job-title-area">
+                            <h3 class="job-title">Desenvolvedor de Software</h3>
+                            <div class="company-name">Americanas S.A.</div>
+                        </div>
+                        <div class="job-period">
+                            <span class="period-badge">Jul 2025 - Presente</span>
+                            <span class="location">São Paulo, Brasil</span>
+                        </div>
                     </div>
-                    <div class="job-period">
-                        <span class="period-badge">Jul 2025 - Presente</span>
-                        <span class="location">São Paulo, Brasil</span>
-                    </div>
-                </div>
-                <div class="job-content">
+                    <i class="fas fa-chevron-down expand-icon"></i>
+                </label>
+                <div class="card-content">
                     <ul class="achievements">
-                        <li>Desenvolvimento de microserviços backend para plataforma de e-commerce com milhões de transações diárias</li>
-                        <li><strong>Migração crítica</strong> do sistema de Pricing de Oracle para MongoDB - refatoração completa do extractor, remoção de interfaces legacy e configuração do novo banco</li>
-                        <li>Resolução de bug crítico no sistema Samsung-IMEI - implementação de rastreamento end-to-end e observabilidade completa</li>
-                        <li>Migração de infraestrutura do Financeiro de AWS para Azure - 3 aplicações completas com migração total de secrets</li>
-                        <li>Aplicado práticas de Clean Code, SOLID, code review, pair programming e testes automatizados</li>
+                        <li>Desenvolvimento de microserviços backend para plataforma de e-commerce com <strong>milhões de transações diárias</strong></li>
+                        <li><strong>Migração crítica do sistema de Pricing</strong> de Oracle para MongoDB:
+                            <ul class="sub-list">
+                                <li>Refatoração completa do extractor</li>
+                                <li>Remoção de interfaces legacy</li>
+                                <li>Configuração e otimização do novo banco de dados</li>
+                            </ul>
+                        </li>
+                        <li><strong>Resolução de bug crítico no sistema Samsung-IMEI</strong>:
+                            <ul class="sub-list">
+                                <li>Implementação de rastreamento end-to-end</li>
+                                <li>Observabilidade completa com métricas e alertas</li>
+                            </ul>
+                        </li>
+                        <li><strong>Migração de infraestrutura Financeiro AWS → Azure</strong>:
+                            <ul class="sub-list">
+                                <li>3 aplicações completas migradas</li>
+                                <li>Migração total de secrets para Azure Key Vault</li>
+                                <li>Zero downtime durante migração</li>
+                            </ul>
+                        </li>
+                        <li>Aplicado práticas de <strong>Clean Code</strong>, <strong>SOLID</strong>, code review, pair programming e testes automatizados</li>
                     </ul>
                     <div class="tech-stack">
                         <span class="tech-tag">Java 21/22</span>
@@ -98,49 +119,59 @@
                         <span class="tech-tag">Oracle</span>
                         <span class="tech-tag">Redis</span>
                         <span class="tech-tag">Kubernetes (AKS)</span>
-                        <span class="tech-tag">Azure</span>
+                        <span class="tech-tag">Azure Blob Storage</span>
+                        <span class="tech-tag">Azure Key Vault</span>
+                        <span class="tech-tag">Lens</span>
                         <span class="tech-tag">Datadog</span>
                         <span class="tech-tag">GitLab CI</span>
+                        <span class="tech-tag">IntelliJ IDEA</span>
                     </div>
                 </div>
             </div>
 
             <!-- Dimensa -->
-            <div class="job-card">
-                <div class="job-header">
-                    <div class="job-title-area">
-                        <h3 class="job-title">Desenvolvedor de Software</h3>
-                        <div class="company-name">Dimensa</div>
+            <div class="expandable-card">
+                <input type="checkbox" id="exp-dimensa" class="card-toggle">
+                <label for="exp-dimensa" class="card-header">
+                    <div class="job-header-content">
+                        <div class="job-title-area">
+                            <h3 class="job-title">Desenvolvedor de Software</h3>
+                            <div class="company-name">Dimensa</div>
+                        </div>
+                        <div class="job-period">
+                            <span class="period-badge">Jul 2024 - Jun 2025</span>
+                            <span class="location">São Paulo, Brasil</span>
+                        </div>
                     </div>
-                    <div class="job-period">
-                        <span class="period-badge">Jul 2024 - Jun 2025</span>
-                        <span class="location">São Paulo, Brasil</span>
-                    </div>
-                </div>
-                <div class="job-content">
+                    <i class="fas fa-chevron-down expand-icon"></i>
+                </label>
+                <div class="card-content">
                     <ul class="achievements">
-                        <li>Desenvolvimento de soluções de Core Banking para o mercado financeiro e sistemas de integração com o BACEN</li>
-                        <li>Implementação e manutenção de tecnologias financeiras:
+                        <li><strong>Desenvolvimento de soluções de Core Banking</strong> para o mercado financeiro e sistemas de integração com o BACEN</li>
+                        <li><strong>Implementação e manutenção de tecnologias financeiras:</strong>
                             <ul class="sub-list">
-                                <li>Pix Automático e Pix MED</li>
-                                <li>Pix QRCode</li>
-                                <li>Pix Saque/Troco</li>
-                                <li>DDA (Débito Direto Autorizado)</li>
-                                <li>Sistema de Pagamentos Brasileiro (SPB)</li>
+                                <li><strong>Pix Automático e Pix MED</strong> - Sistema de pagamentos instantâneos automáticos</li>
+                                <li><strong>Pix QRCode</strong> - Geração e leitura de QR Codes para pagamentos</li>
+                                <li><strong>Pix Saque/Troco</strong> - Funcionalidade de saque em estabelecimentos</li>
+                                <li><strong>DDA (Débito Direto Autorizado)</strong> - Sistema de cobrança automática</li>
+                                <li><strong>Sistema de Pagamentos Brasileiro (SPB)</strong> - Integração com sistema de liquidação</li>
                             </ul>
                         </li>
-                        <li>Desenvolvimento e implementação de um framework interno</li>
-                        <li>Aplicado práticas de código limpo e padrões de projeto</li>
+                        <li><strong>Desenvolvimento e implementação de framework interno</strong> para padronização e agilidade no desenvolvimento</li>
+                        <li>Aplicado <strong>práticas de código limpo</strong> e <strong>padrões de projeto</strong> (Design Patterns)</li>
+                        <li>Participação ativa em <strong>code reviews</strong> e mentoria de desenvolvedores júnior</li>
+                        <li>Integração com APIs do BACEN e instituições financeiras</li>
                     </ul>
                     <div class="tech-stack">
                         <span class="tech-tag">Java</span>
                         <span class="tech-tag">Spring Boot</span>
                         <span class="tech-tag">API Rest</span>
                         <span class="tech-tag">Oracle</span>
-                        <span class="tech-tag">SQL Server</span>
+                        <span class="tech-tag">Microsoft SQL Server</span>
                         <span class="tech-tag">Docker</span>
                         <span class="tech-tag">Kafka</span>
                         <span class="tech-tag">Jenkins</span>
+                        <span class="tech-tag">Git</span>
                         <span class="tech-tag">Redis</span>
                         <span class="tech-tag">JavaScript</span>
                         <span class="tech-tag">React</span>
@@ -149,22 +180,37 @@
             </div>
 
             <!-- Dimensa Estagiário -->
-            <div class="job-card">
-                <div class="job-header">
-                    <div class="job-title-area">
-                        <h3 class="job-title">Estagiário de Desenvolvimento de Software</h3>
-                        <div class="company-name">Dimensa - Totvs/B3</div>
+            <div class="expandable-card">
+                <input type="checkbox" id="exp-dimensa-intern" class="card-toggle">
+                <label for="exp-dimensa-intern" class="card-header">
+                    <div class="job-header-content">
+                        <div class="job-title-area">
+                            <h3 class="job-title">Estagiário de Desenvolvimento de Software</h3>
+                            <div class="company-name">Dimensa - Totvs/B3</div>
+                        </div>
+                        <div class="job-period">
+                            <span class="period-badge">Out 2022 - Mar 2024</span>
+                            <span class="location">São Paulo, Brasil</span>
+                        </div>
                     </div>
-                    <div class="job-period">
-                        <span class="period-badge">Out 2022 - Mar 2024</span>
-                        <span class="location">São Paulo, Brasil</span>
-                    </div>
-                </div>
-                <div class="job-content">
+                    <i class="fas fa-chevron-down expand-icon"></i>
+                </label>
+                <div class="card-content">
                     <ul class="achievements">
-                        <li>Aplicado práticas de código limpo e boas práticas de desenvolvimento</li>
-                        <li>Participação em projetos de Core Banking e sistemas financeiros</li>
+                        <li><strong>Início da carreira</strong> em desenvolvimento de software no setor financeiro</li>
+                        <li>Aplicado práticas de <strong>código limpo</strong> e <strong>boas práticas de desenvolvimento</strong></li>
+                        <li>Participação em projetos de <strong>Core Banking</strong> e <strong>sistemas financeiros</strong></li>
+                        <li>Desenvolvimento de funcionalidades para sistemas de pagamento</li>
+                        <li>Aprendizado de tecnologias empresariais e arquitetura de microserviços</li>
+                        <li>Trabalho em equipe com metodologias ágeis (Scrum/Kanban)</li>
                     </ul>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Java</span>
+                        <span class="tech-tag">Spring Boot</span>
+                        <span class="tech-tag">SQL</span>
+                        <span class="tech-tag">Git</span>
+                        <span class="tech-tag">REST APIs</span>
+                    </div>
                 </div>
             </div>
         </section>
@@ -174,14 +220,51 @@
             <div class="section-header">
                 <h2 class="section-title">
                     <i class="fab fa-github"></i>
-                    REPOSITÓRIOS PÚBLICOS
+                    REPOSITÓRIOS & PROJETOS
                 </h2>
                 <div class="section-line"></div>
             </div>
-            <div id="repos-container" class="repos-grid">
-                <div class="loading-state">
-                    <i class="fas fa-cog fa-spin"></i>
-                    <span>Carregando repositórios...</span>
+
+            <div class="expandable-card">
+                <input type="checkbox" id="repos-section" class="card-toggle">
+                <label for="repos-section" class="card-header-simple">
+                    <h3>Meus Repositórios Públicos</h3>
+                    <i class="fas fa-chevron-down expand-icon"></i>
+                </label>
+                <div class="card-content">
+                    <div class="repos-grid">
+                        <div class="repo-card">
+                            <div class="repo-header">
+                                <i class="fab fa-github"></i>
+                                <div>
+                                    <h4 class="repo-title">henrique-curriculum</h4>
+                                </div>
+                            </div>
+                            <p class="repo-description">Currículo web profissional com design industrial moderno. Desenvolvido com HTML, CSS puro e totalmente responsivo.</p>
+                            <div class="repo-footer">
+                                <div class="repo-stats">
+                                    <span class="repo-language">
+                                        <span class="language-dot" style="background: #e34c26"></span>
+                                        HTML/CSS
+                                    </span>
+                                </div>
+                            </div>
+                            <a href="https://github.com/henribon/henrique-curriculum" target="_blank" class="repo-link">
+                                <i class="fas fa-external-link-alt"></i> Ver repositório
+                            </a>
+                        </div>
+
+                        <div class="info-card">
+                            <i class="fab fa-github" style="font-size: 3rem; color: var(--warning-yellow); margin-bottom: 1rem;"></i>
+                            <h4 style="color: var(--warning-yellow); margin-bottom: 0.5rem;">Explore meu GitHub</h4>
+                            <p style="color: var(--text-secondary); margin-bottom: 1rem;">
+                                Confira todos os meus projetos públicos, contribuições e atividades.
+                            </p>
+                            <a href="https://github.com/henribon" target="_blank" class="btn-primary">
+                                <i class="fab fa-github"></i> @henribon
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -195,18 +278,43 @@
                 </h2>
                 <div class="section-line"></div>
             </div>
-            <div class="spring-contribution-card">
-                <div class="contribution-header">
-                    <i class="fab fa-github" style="font-size: 2rem; color: #FFA500;"></i>
-                    <div>
-                        <h3>Spring Framework</h3>
-                        <p class="contribution-subtitle">Contribuições para o ecossistema Spring</p>
+
+            <div class="expandable-card spring-card">
+                <input type="checkbox" id="spring-section" class="card-toggle">
+                <label for="spring-section" class="card-header-simple">
+                    <div style="display: flex; align-items: center; gap: 1rem;">
+                        <i class="fab fa-github" style="font-size: 2rem; color: #6db33f;"></i>
+                        <div>
+                            <h3 style="color: #6db33f;">Spring Framework</h3>
+                            <p style="color: var(--text-secondary); font-size: 0.9rem; margin: 0;">Contribuições para o ecossistema Spring</p>
+                        </div>
                     </div>
-                </div>
-                <div id="spring-contributions" class="contributions-grid">
-                    <div class="loading-state">
-                        <i class="fas fa-cog fa-spin"></i>
-                        <span>Carregando contribuições...</span>
+                    <i class="fas fa-chevron-down expand-icon"></i>
+                </label>
+                <div class="card-content">
+                    <div class="contribution-item">
+                        <div class="contribution-header-text">
+                            <i class="fas fa-leaf" style="color: #6db33f;"></i>
+                            <span>Interesse ativo em contribuir para o Spring Framework</span>
+                        </div>
+                        <p style="color: var(--text-secondary); margin-top: 1rem; line-height: 1.7;">
+                            Como desenvolvedor que utiliza extensivamente o ecossistema Spring (Spring Boot, Spring Data, Spring Security)
+                            no dia a dia, tenho grande interesse em contribuir para o projeto. Estou estudando a base de código e
+                            procurando issues marcadas como "good first issue" para começar minhas contribuições.
+                        </p>
+                        <div class="spring-experience">
+                            <h4 style="color: var(--warning-yellow); margin: 1.5rem 0 1rem;">Experiência com Spring:</h4>
+                            <ul class="achievements" style="margin: 0;">
+                                <li>Desenvolvimento de microserviços com <strong>Spring Boot 3.x</strong></li>
+                                <li>Uso avançado de <strong>Spring Data JPA</strong> e <strong>Spring Data MongoDB</strong></li>
+                                <li>Implementação de segurança com <strong>Spring Security</strong></li>
+                                <li>Mensageria com <strong>Spring Kafka</strong></li>
+                                <li>Observabilidade com <strong>Spring Actuator</strong></li>
+                            </ul>
+                        </div>
+                        <a href="https://github.com/spring-projects" target="_blank" class="contribution-link">
+                            <i class="fab fa-github"></i> Ver projetos Spring
+                        </a>
                     </div>
                 </div>
             </div>
@@ -231,7 +339,5 @@
             </div>
         </div>
     </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>

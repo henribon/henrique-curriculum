@@ -1,6 +1,6 @@
 # Currículo Industrial - Henrique Bon Oliveira
 
-Um currículo web moderno com design industrial, criado para desenvolvedores de software.
+Um currículo web moderno e estático com design industrial, criado para desenvolvedores de software.
 
 ## 🎨 Design
 
@@ -13,27 +13,29 @@ O design foi inspirado em elementos industriais:
 ## 🚀 Recursos
 
 - ✅ Design responsivo para todos os dispositivos
-- ✅ Integração com GitHub API para mostrar repositórios públicos
-- ✅ Seção de contribuições para projetos Spring
+- ✅ **Apenas HTML e CSS puro** - sem JavaScript!
+- ✅ Seções expansíveis usando técnica CSS (checkbox + label)
 - ✅ Animações suaves e transições
 - ✅ Tema escuro industrial
+- ✅ Fácil de customizar
+- ✅ Pronto para deploy imediato
 
 ## 📦 Tecnologias
 
 - HTML5
-- CSS3 (Custom Properties, Grid, Flexbox)
-- JavaScript (ES6+)
-- GitHub API
-- Font Awesome Icons
-- Google Fonts
+- CSS3 (Custom Properties, Grid, Flexbox, Transitions)
+- Font Awesome Icons (CDN)
+- Google Fonts (CDN)
+
+**Sem dependências** - Sem build tools, sem Node.js, sem frameworks!
 
 ## 🔧 Como usar
 
-### Opção 1: Abrir diretamente
+### Opção 1: Abrir diretamente no navegador
 
-Simplesmente abra o arquivo `index.html` no seu navegador.
+Simplesmente clique duas vezes no arquivo `index.html` para abrir no seu navegador padrão.
 
-### Opção 2: Usar um servidor local
+### Opção 2: Usar um servidor local (opcional)
 
 ```bash
 # Python 3
@@ -50,49 +52,125 @@ Depois acesse: `http://localhost:8000`
 
 ## 🌐 Deploy
 
-Você pode fazer deploy deste currículo em várias plataformas:
+Você pode fazer deploy deste currículo em várias plataformas gratuitas:
 
-### GitHub Pages
+### GitHub Pages (RECOMENDADO)
 
-1. Vá em Settings > Pages no seu repositório
-2. Selecione a branch `main` como source
-3. Sua página estará disponível em: `https://henribon.github.io/henrique-curriculum/`
+1. Vá em **Settings** > **Pages** no seu repositório
+2. Selecione a branch como source
+3. Sua página estará disponível em: `https://[seu-usuario].github.io/[nome-repo]/`
 
 ### Netlify
 
-1. Conecte seu repositório ao Netlify
-2. Configure build settings:
-   - Build command: (deixe vazio)
-   - Publish directory: `.`
-3. Deploy!
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start)
+
+1. Arraste e solte a pasta no Netlify Drop
+2. Ou conecte seu repositório GitHub ao Netlify
+3. Deploy automático!
 
 ### Vercel
 
 1. Importe o repositório no Vercel
-2. O deploy será automático
+2. Deploy automático - nenhuma configuração necessária
+
+### Hostinger / Hospedagem Tradicional
+
+Simplesmente faça upload dos arquivos via FTP para a pasta `public_html`.
 
 ## 📝 Personalização
 
-Para personalizar o currículo:
+### Informações Pessoais
 
-1. **Informações pessoais**: Edite o HTML em `index.html`
-2. **Cores**: Modifique as variáveis CSS em `:root` no `styles.css`
-3. **GitHub**: Altere o `GITHUB_USERNAME` no `script.js`
+Edite o arquivo `index.html` e procure por:
+- Nome, título, localização no header
+- Contatos (telefone, email, LinkedIn, GitHub)
+- Experiências profissionais
+- Repositórios e projetos
+
+### Cores e Estilo
+
+Modifique as variáveis CSS no `:root` do arquivo `styles.css`:
+
+```css
+:root {
+    --metal-dark: #1a1a1a;
+    --metal-medium: #2d2d2d;
+    --rust-orange: #ff6b35;
+    --warning-yellow: #ffa500;
+    /* ... outras variáveis */
+}
+```
+
+### Adicionar/Remover Seções
+
+Para adicionar uma nova experiência, copie o bloco `.expandable-card` e cole:
+
+```html
+<div class="expandable-card">
+    <input type="checkbox" id="seu-id-unico" class="card-toggle">
+    <label for="seu-id-unico" class="card-header">
+        <!-- Seu conteúdo do header -->
+        <i class="fas fa-chevron-down expand-icon"></i>
+    </label>
+    <div class="card-content">
+        <!-- Seu conteúdo expansível -->
+    </div>
+</div>
+```
 
 ## 📱 Responsividade
 
 O currículo é totalmente responsivo com breakpoints em:
-- Desktop: > 768px
-- Tablet: 480px - 768px
-- Mobile: < 480px
+- **Desktop**: > 768px - Layout completo em grid
+- **Tablet**: 480px - 768px - Layout adaptado
+- **Mobile**: < 480px - Layout em coluna única
 
-## 🎯 Recursos futuros
+## ⚙️ Seções Expansíveis (Accordion)
 
-- [ ] Modo claro/escuro
-- [ ] Seção de habilidades com gráficos
-- [ ] Blog/artigos
-- [ ] Formulário de contato
-- [ ] Internacionalização (PT/EN)
+As seções são expansíveis usando **apenas CSS**! Nenhum JavaScript necessário.
+
+**Como funciona:**
+- Usa um checkbox escondido
+- O label funciona como botão clicável
+- CSS controla a altura do conteúdo baseado no estado do checkbox
+- Ícone rotaciona quando expandido
+
+**Vantagens:**
+- Performance superior (sem JS)
+- Funciona mesmo com JavaScript desabilitado
+- Mais leve e rápido
+- Fácil de manter
+
+## 🎯 Estrutura de Arquivos
+
+```
+henrique-curriculum/
+├── index.html          # Página principal
+├── styles.css          # Todos os estilos
+└── README.md           # Este arquivo
+```
+
+Simples assim! Apenas 2 arquivos principais.
+
+## 🎨 Seções Incluídas
+
+1. **Header** - Nome, título profissional com design industrial
+2. **Contatos** - Telefone, email, LinkedIn, GitHub
+3. **Experiência Profissional** - 3 posições expansíveis com detalhes
+4. **Repositórios & Projetos** - Seção para seus projetos
+5. **Contribuições Open Source** - Destaque para Spring Framework
+6. **Footer** - Direitos autorais e design industrial
+
+## 💡 Dicas
+
+- Para definir qual seção inicia aberta, adicione `checked` ao checkbox:
+  ```html
+  <input type="checkbox" id="exp-americanas" class="card-toggle" checked>
+  ```
+
+- Para mudar as cores das tags de tecnologia, edite `.tech-tag` em `styles.css`
+
+- Os ícones são do Font Awesome 6.4.0. Veja todos em: [fontawesome.com/icons](https://fontawesome.com/icons)
 
 ## 📄 Licença
 
@@ -108,3 +186,5 @@ MIT License - sinta-se livre para usar e modificar!
 ---
 
 Feito com ⚙️ e ☕ por Henrique Bon
+
+**100% HTML & CSS • 0% JavaScript • 0 Dependências**
